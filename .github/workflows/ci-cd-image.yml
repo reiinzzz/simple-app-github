@@ -15,13 +15,13 @@ env:
           run: docker images
         - name: Login to GitHub Registry
           run: echo ${{ secrets.TOKEN_GITHUB }} | docker login ghcr.io -u reiinzzz --password-stdin
-                                                                                           - name: Push Image
+        - name: Push Image
           run: docker push $IMAGE_NAME
 
-                                                                                       deploy:
+    deploy:
       needs: build-push-image
       runs-on: ubuntu-latest
-                                                                                         steps:
+      steps:
         - name: Check out repository code
           uses: actions/checkout@v4
         - name: Login to GitHub Registry
