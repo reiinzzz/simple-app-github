@@ -1,5 +1,5 @@
 services:
- webserver:
-   image: ghcr.io/reiinzzz/nginx-username_adinusa
-   ports:
-     - "8080:80"
+  webserver:
+    image: ghcr.io/reiinzzz/nginx-username_adinusa
+    ports:
+      - "8080:80"
