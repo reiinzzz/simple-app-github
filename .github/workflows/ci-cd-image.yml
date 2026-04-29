@@ -2,8 +2,8 @@ name: Build, Push and Deploy Docker Image
 run-name: Build, Push and Deploy Image
 on: [push]
 env:
-    IMAGE_NAME: "ghcr.io/reiinzzz/nginx-arel"
-  jobs:
+  IMAGE_NAME: "ghcr.io/reiinzzz/nginx-arel"
+jobs:
     build-push-image:
       runs-on: ubuntu-latest
       steps:
