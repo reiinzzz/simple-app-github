@@ -1,4 +1,4 @@
-ervices:
+services:
  webserver:
    image: ghcr.io/reiinzzz/nginx-username_adinusa
    ports:
